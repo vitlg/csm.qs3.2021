@@ -100,19 +100,32 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
           <source src="audios/parte4_4.ogg" type="audio/ogg">
            Your browser does not support the audio element.
          </audio>
-       <p>Finalmente, faz-se o calculo da transformada discreta de cosseno, obtendo-se a seguinte matriz.</p>
-       <i><center><img src="imagens/avatares.jpg" alt="Avatares"></center></i>
-	   <i><center><p>Fig5 - Imagem original Avatar (510x670):</p></center/></i>
+       <p>Finalmente, fez-se o calculo da transformada discreta de cosseno, obtendo-se a seguinte matriz.Utilizou-se o método "cv.dct()" </p>
+       <i><center><img src="imagens/matrizDct.jpg" alt="Avatares"></center></i>
+	   <i><center><p>Fig4.4 - Matriz DCT </p></center/></i>
 	   
 	   <audio controls>
           <source src="audios/parte4_5.ogg" type="audio/ogg">
            Your browser does not support the audio element.
          </audio>
-       <p>A compressão via DCT consite em eliminar as componentes de alta frequencia, que são menos perceptiveis aos sistema visual humano.
+       <p>A compressão via DCT consiste em eliminar as componentes de alta frequencia, que são menos perceptiveis ao sistema visual humano.
 	   Na matriz DCT da imagem, estas componentes se encontram na região inferior direita da matriz. Assim pode-se "zerar" as componentes dessa região.
-	   Abaixo, </p>
-       <i><center><img src="imagens/avatares.jpg" alt="Avatares"></center></i>
-	   <i><center><p>Fig5 - Imagem original Avatar (510x670):</p></center/></i>
+	   Abaixo, fez-se duas compressões: Uma eliminando todos os comoponentes abaixo e à direita da diagonal secundaria da matriz, inclusive esta. A segunda compressão
+	   foi mais drástica e eliminou mais duas diagonais acima da diagonal secundaria. A representação matricial destas operações seguem abaixo. Esta opereação foi feita manualmente sem uso de método especifico.</p>
+       <i><center><img src="imagens/DCTcompressao1.jpg" alt="Avatares"></center></i>
+	   <i><center><img src="imagens/DCTcompressao2.jpg" alt="Avatares"></center></i>
+	   <i><center><p>Fig4.5 - Matrizes resultantes da compressão</p></center/></i>
+	   
+	   <audio controls>
+          <source src="audios/parte4_6.ogg" type="audio/ogg">
+           Your browser does not support the audio element.
+         </audio>
+       <p>Finalmente foi feita a transformada inversa nas versões comprimidas atravez do método cv.idct(), gerando as imagens apresentadas abaixo. 
+	   À esquerda está original para comparação. Observe que quanto mais drástica a compressão, mais suave é a variação de intensidade da cor entre bits anexos.</p>
+	   <i><center><img src="imagens/original.jpg" alt="Avatares"></center></i>
+       <i><center><img src="imagens/compressao1.jpg" alt="Avatares"></center></i>
+	   <i><center><img src="imagens/compressao2.jpg" alt="Avatares"></center></i>
+	   <i><center><p>Fig4.5 - Matrizes resultantes da compressão</p></center/></i>
 	   
 	   
 	   
