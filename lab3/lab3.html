@@ -94,7 +94,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
          </audio>
        <p>Para operar a DCT se faz necessário converter a matriz para ponto flutuante. Para essa operação utilizou-se o método np.float32()
 	   resultando na matriz apresentada abaixo</p>
-	   <center><img src="imagens/matrizFloat" alt="Grupo 50%"></center>
+	   <center><img src="imagens/matrizFloat.jpg" alt="Grupo 50%"></center>
 	   <i><center><a>Fig 4.3- Matriz float </a></center></i>
   
 	 
@@ -113,11 +113,10 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
        <p>A compressão via DCT consiste em eliminar as componentes de alta frequencia, que são menos perceptiveis ao sistema visual humano.
 	   Na matriz DCT da imagem, estas componentes se encontram na região inferior direita da matriz. Assim pode-se "zerar" as componentes dessa região.</P>
 	   <P>Abaixo, fez-se duas compressões: Uma eliminando todos os componentes à direita da diagonal secundaria da matriz, inclusive esta. A segunda compressão
-	   foi mais drástica e eliminou mais duas diagonais acima da diagonal secundaria. A representação matricial destas operações seguem abaixo, sendo que estas 
-	   operações foram feitas manualmente sem uso de método específico.</p>
-       <i><center><img src="imagens/DCTcompressao1.jpg" alt="Avatares"></center></i>
-	   <i><center><img src="imagens/DCTcompressao2.jpg" alt="Avatares"></center></i>
-	   <i><center><p>Fig4.5 - Matrizes resultantes da compressão</p></center/></i>
+	   foi mais drástica eliminou mais duas diagonais acima da diagonal secundária. A representação matricial destas operações seguem abaixo, sendo que estas 
+	   operações foram feitas matematicamente sem uso de método especial.</p>
+       <i><center><img src="imagens/DCTcompressao1.jpg" alt="Avatares"><img src="imagens/DCTcompressao2.jpg" alt="Avatares"></center></i>
+	   <i><center><p>Fig4.5 - Matrizes 1 e 2 resultantes da compressão</p></center/></i>
 	   
 	   <audio controls>
           <source src="audios/parte4_6.ogg" type="audio/ogg">
@@ -125,9 +124,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
          </audio>
        <p>Finalmente foi feita a transformada inversa nas versões comprimidas atravez do método cv.idct(), gerando as imagens apresentadas abaixo. 
 	   À esquerda está original para comparação. Observe que quanto mais drástica a compressão, mais suave é a variação de intensidade da cor entre bits anexos.</p>
-	   <i><center><img src="imagens/original.jpg" alt="Avatares"></center></i>
-       <i><center><img src="imagens/compressao1.jpg" alt="Avatares"></center></i>
-	   <i><center><img src="imagens/compressao2.jpg" alt="Avatares"></center></i>
+	   <i><center><img src="imagens/comparacao.bmp" alt="Avatares"></center></i>
 	   <i><center><p>Fig4.5 - Matrizes resultantes da compressão</p></center/></i>
 	   
 	   
