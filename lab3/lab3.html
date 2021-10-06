@@ -80,11 +80,13 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
           <source src="audios/Parte4_2.ogg" type="audio/ogg">
            Your browser does not support the audio element.
          </audio>
-       <p>Uma matriz 60x60 ainda é uma matriz grande, assim foi selecionado um bloco 8x8 que é mostrado abaixo como imagem e no formato matricial.
-	   Tendo o centro da imagem como referência, o bloco selecionado é defido nas coordenadas de -12 a -4 tanto no eixo x como no eixo y da imagem original.   </p>
-	   <center><img src="imagens/original.jpg" alt="Grupo P&B"></center>
-	   <center><img src="imagens/matrizOriginal.jpg" alt="Grupo P&B"></center>
-	   <i><center><a>Fig 4.2- Imagem e matriz correspondente</a></center/></i>
+       <p>Uma matriz 60x60 ainda é uma matriz grande para o processamento da DCT e para a visualização da matriz numérica, assim foi selecionado um bloco 8x8.
+		  Abaixo estão em sequencia: a imagem original ampliada com a região selecionada destacada em vermelho, o bloco y 8x8, e´por fim sua representação matricial.
+       </p>
+	   <center><img src="imagens/BolaMarca.bmp" alt="Grupo P&B" style="width:15%;">
+	   <img src="imagens/original.bmp" alt="Grupo P&B">
+	   <img src="imagens/matrizOriginal.jpg" alt="Grupo P&B"></center>
+	   <i><center><a>Fig 4.2- Imagem original, Bloco y 8x8, Matriz y</a></center/></i>
 	   
 	   <audio controls>
           <source src="audios/parte4_3.ogg" type="audio/ogg">
@@ -111,7 +113,8 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
        <p>A compressão via DCT consiste em eliminar as componentes de alta frequencia, que são menos perceptiveis ao sistema visual humano.
 	   Na matriz DCT da imagem, estas componentes se encontram na região inferior direita da matriz. Assim pode-se "zerar" as componentes dessa região.</P>
 	   <P>Abaixo, fez-se duas compressões: Uma eliminando todos os componentes à direita da diagonal secundaria da matriz, inclusive esta. A segunda compressão
-	   foi mais drástica e eliminou mais duas diagonais acima da diagonal secundaria. A representação matricial destas operações seguem abaixo, sendo que estas opereações foram feitas manualmente sem uso de método especifico.</p>
+	   foi mais drástica e eliminou mais duas diagonais acima da diagonal secundaria. A representação matricial destas operações seguem abaixo, sendo que estas 
+	   operações foram feitas manualmente sem uso de método específico.</p>
        <i><center><img src="imagens/DCTcompressao1.jpg" alt="Avatares"></center></i>
 	   <i><center><img src="imagens/DCTcompressao2.jpg" alt="Avatares"></center></i>
 	   <i><center><p>Fig4.5 - Matrizes resultantes da compressão</p></center/></i>
