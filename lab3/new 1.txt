@@ -1,0 +1,249 @@
+import numpy as np
+import cv2 as cv
+import matplotlib.pyplot as plt
+
+/lab3/files/
+
+from google.colab import drive
+#drive.mount('/content/drive/', force_remount=True)
+drive.mount('/lab3/files/', force_remount=True)
+
+!ls -l "drive/My Drive/Colab Notebooks"   # verifica se montou o drive e se os arquivos estão lá...
+bgr1 = cv.imread('drive/My Drive/Colab Notebooks/Grupo.JPG') # leitura no formato BGR!
+bgr2 = cv.imread('drive/My Drive/Colab Notebooks/daniel.jpg')
+bgr3 = cv.imread('drive/My Drive/Colab Notebooks/ed.jpg')
+bgr4 = cv.imread('drive/My Drive/Colab Notebooks/edu.jpg')
+bgr5 = cv.imread('drive/My Drive/Colab Notebooks/vito.jpg')
+altura1, largura1, camadas1 = bgr1.shape
+altura2, largura2, camadas2 = bgr2.shape
+altura3, largura3, camadas3 = bgr3.shape
+altura4, largura4, camadas4 = bgr4.shape
+altura5, largura5, camadas5 = bgr5.shape
+print("Resolução: ", largura1, " x ", altura1, "PIXELS. ", camadas1, " camadas.")
+print("Resolução: ", largura2, " x ", altura2, "PIXELS. ", camadas2, " camadas.")
+print("Resolução: ", largura3, " x ", altura3, "PIXELS. ", camadas3, " camadas.")
+print("Resolução: ", largura4, " x ", altura4, "PIXELS. ", camadas4, " camadas.")
+print("Resolução: ", largura5, " x ", altura5, "PIXELS. ", camadas5, " camadas.")
+
+
+b1, g1, r1 = cv.split(bgr1)
+b2, g2, r2 = cv.split(bgr2)
+b3, g3, r3 = cv.split(bgr3)
+b4, g4, r4 = cv.split(bgr4)
+b5, g5, r5 = cv.split(bgr5)
+rgb2 = cv.merge([r1,g1,b1])
+rgb3 = cv.merge([r2,g2,b2])
+rgb4 = cv.merge([r3,g3,b3])
+rgb5 = cv.merge([r4,g4,b4])
+rgb6 = cv.merge([r5,g5,b5])
+# Q1 - O que foi feito aqui?
+
+
+plt.figure(figsize=[12, 5])
+plt.subplot(121); plt.imshow(bgr1); plt.title('BGR')
+plt.subplot(122); plt.imshow(rgb2); plt.title('RBG')
+plt.figure(figsize=[12, 5])
+plt.subplot(121); plt.imshow(bgr2); plt.title('BGR')
+plt.subplot(122); plt.imshow(rgb3); plt.title('RBG')
+plt.figure(figsize=[12, 5])
+plt.subplot(121); plt.imshow(bgr3); plt.title('BGR')
+plt.subplot(122); plt.imshow(rgb4); plt.title('RBG')
+plt.figure(figsize=[12, 5])
+plt.subplot(121); plt.imshow(bgr4); plt.title('BGR')
+plt.subplot(122); plt.imshow(rgb5); plt.title('RBG')
+plt.figure(figsize=[12, 5])
+plt.subplot(121); plt.imshow(bgr5); plt.title('BGR')
+plt.subplot(122); plt.imshow(rgb6); plt.title('RBG')
+
+
+
+ycrcb = cv.cvtColor(bgr1, cv.COLOR_BGR2YCrCb)
+hsv = cv.cvtColor(bgr1, cv.COLOR_BGR2HSV)
+plt.figure(figsize=[15,6])
+plt.subplot(131); plt.imshow(rgb2); plt.title('RGB')
+plt.subplot(132); plt.imshow(ycrcb); plt.title('YCrCb')
+plt.subplot(133); plt.imshow(hsv); plt.title('HSV')
+
+ycrcb2 = cv.cvtColor(bgr2, cv.COLOR_BGR2YCrCb)
+hsv2 = cv.cvtColor(bgr2, cv.COLOR_BGR2HSV)
+plt.figure(figsize=[15,6])
+plt.subplot(131); plt.imshow(rgb3); plt.title('RGB')
+plt.subplot(132); plt.imshow(ycrcb2); plt.title('YCrCb')
+plt.subplot(133); plt.imshow(hsv2); plt.title('HSV')
+
+ycrcb3 = cv.cvtColor(bgr3, cv.COLOR_BGR2YCrCb)
+hsv3 = cv.cvtColor(bgr3, cv.COLOR_BGR2HSV)
+plt.figure(figsize=[15,6])
+plt.subplot(131); plt.imshow(rgb4); plt.title('RGB')
+plt.subplot(132); plt.imshow(ycrcb3); plt.title('YCrCb')
+plt.subplot(133); plt.imshow(hsv3); plt.title('HSV')
+
+ycrcb4 = cv.cvtColor(bgr4, cv.COLOR_BGR2YCrCb)
+hsv4 = cv.cvtColor(bgr4, cv.COLOR_BGR2HSV)
+plt.figure(figsize=[15,6])
+plt.subplot(131); plt.imshow(rgb5); plt.title('RGB')
+plt.subplot(132); plt.imshow(ycrcb4); plt.title('YCrCb')
+plt.subplot(133); plt.imshow(hsv4); plt.title('HSV')
+
+ycrcb5 = cv.cvtColor(bgr5, cv.COLOR_BGR2YCrCb)
+hsv5 = cv.cvtColor(bgr5, cv.COLOR_BGR2HSV)
+plt.figure(figsize=[15,6])
+plt.subplot(131); plt.imshow(rgb6); plt.title('RGB')
+plt.subplot(132); plt.imshow(ycrcb5); plt.title('YCrCb')
+plt.subplot(133); plt.imshow(hsv5); plt.title('HSV')
+
+
+imageR = rgb2.copy()
+imageR[:, :, 1:3] = 0
+imageG = rgb2.copy()
+imageG[:, :, 0] = 0; imageG[:, :, 2] = 0
+imageB = rgb2.copy()
+imageB[:, :, 0:2] = 0   
+
+imageR1 = rgb3.copy()
+imageR1[:, :, 1:3] = 0
+imageG1 = rgb3.copy()
+imageG1[:, :, 0] = 0; imageG[:, :, 2] = 0
+imageB1 = rgb3.copy()
+imageB1[:, :, 0:2] = 0   
+
+imageR2 = rgb4.copy()
+imageR2[:, :, 1:3] = 0
+imageG2 = rgb4.copy()
+imageG2[:, :, 0] = 0; imageG[:, :, 2] = 0
+imageB2 = rgb4.copy()
+imageB2[:, :, 0:2] = 0   
+
+imageR3 = rgb5.copy()
+imageR3[:, :, 1:3] = 0
+imageG3 = rgb5.copy()
+imageG3[:, :, 0] = 0; imageG[:, :, 2] = 0
+imageB3 = rgb5.copy()
+imageB3[:, :, 0:2] = 0 
+
+imageR4 = rgb6.copy()
+imageR4[:, :, 1:3] = 0
+imageG4 = rgb6.copy()
+imageG4[:, :, 0] = 0; imageG[:, :, 2] = 0
+imageB4 = rgb6.copy()
+imageB4[:, :, 0:2] = 0 
+
+# Q2 - O que foi feito aqui?
+
+plt.figure(figsize=[15,6])
+plt.subplot(131); plt.imshow(imageR); plt.title('RGB_Camada R')
+plt.subplot(132); plt.imshow(imageG); plt.title('RGB_Camada G')
+plt.subplot(133); plt.imshow(imageB); plt.title('RGB_Camada B')
+
+plt.figure(figsize=[15,6])
+plt.subplot(131); plt.imshow(imageR1); plt.title('RGB_Camada R')
+plt.subplot(132); plt.imshow(imageG1); plt.title('RGB_Camada G')
+plt.subplot(133); plt.imshow(imageB1); plt.title('RGB_Camada B')
+
+plt.figure(figsize=[15,6])
+plt.subplot(131); plt.imshow(imageR2); plt.title('RGB_Camada R')
+plt.subplot(132); plt.imshow(imageG2); plt.title('RGB_Camada G')
+plt.subplot(133); plt.imshow(imageB2); plt.title('RGB_Camada B')
+
+plt.figure(figsize=[15,6])
+plt.subplot(131); plt.imshow(imageR3); plt.title('RGB_Camada R')
+plt.subplot(132); plt.imshow(imageG3); plt.title('RGB_Camada G')
+plt.subplot(133); plt.imshow(imageB3); plt.title('RGB_Camada B')
+
+plt.figure(figsize=[15,6])
+plt.subplot(131); plt.imshow(imageR4); plt.title('RGB_Camada R')
+plt.subplot(132); plt.imshow(imageG4); plt.title('RGB_Camada G')
+plt.subplot(133); plt.imshow(imageB4); plt.title('RGB_Camada B')
+
+
+y1, cr1, cb1 = cv.split(ycrcb)
+imageCR = ycrcb.copy()
+imageCR[:, :, 0] = 0
+imageCR[:, :, 2] = 0
+Cr = cv.cvtColor(imageCR, cv.COLOR_YCrCb2RGB)
+
+imageCB = ycrcb.copy()
+imageCB[:, :, 0] = 0
+imageCB[:, :, 1] = 0
+Cb = cv.cvtColor(imageCB, cv.COLOR_YCrCb2RGB)
+
+
+y2, cr2, cb2 = cv.split(ycrcb2)
+imageCR1 = ycrcb2.copy()
+imageCR1[:, :, 0] = 0
+imageCR1[:, :, 2] = 0
+Cr1 = cv.cvtColor(imageCR1, cv.COLOR_YCrCb2RGB)
+
+imageCB1 = ycrcb2.copy()
+imageCB1[:, :, 0] = 0
+imageCB1[:, :, 1] = 0
+Cb1 = cv.cvtColor(imageCB1, cv.COLOR_YCrCb2RGB)
+
+
+y3, cr3, cb3 = cv.split(ycrcb3)
+imageCR2 = ycrcb3.copy()
+imageCR2[:, :, 0] = 0
+imageCR2[:, :, 2] = 0
+Cr2 = cv.cvtColor(imageCR2, cv.COLOR_YCrCb2RGB)
+
+imageCB2 = ycrcb3.copy()
+imageCB2[:, :, 0] = 0
+imageCB2[:, :, 1] = 0
+Cb2 = cv.cvtColor(imageCB2, cv.COLOR_YCrCb2RGB)
+
+
+y4, cr4, cb4 = cv.split(ycrcb4)
+imageCR3 = ycrcb4.copy()
+imageCR3[:, :, 0] = 0
+imageCR3[:, :, 2] = 0
+Cr3 = cv.cvtColor(imageCR3, cv.COLOR_YCrCb2RGB)
+
+imageCB3 = ycrcb4.copy()
+imageCB3[:, :, 0] = 0
+imageCB3[:, :, 1] = 0
+Cb3 = cv.cvtColor(imageCB3, cv.COLOR_YCrCb2RGB)
+
+y5, cr5, cb5 = cv.split(ycrcb5)
+imageCR4 = ycrcb5.copy()
+imageCR4[:, :, 0] = 0
+imageCR4[:, :, 2] = 0
+Cr4 = cv.cvtColor(imageCR4, cv.COLOR_YCrCb2RGB)
+
+imageCB4 = ycrcb5.copy()
+imageCB4[:, :, 0] = 0
+imageCB4[:, :, 1] = 0
+Cb4 = cv.cvtColor(imageCB4, cv.COLOR_YCrCb2RGB)
+
+
+
+plt.figure(figsize=[15, 5])
+plt.subplot(141); plt.imshow(rgb2); plt.title('RGB original')
+plt.subplot(142); plt.imshow(y1, cmap='gray'); plt.title('YCrCb_Y')
+plt.subplot(143); plt.imshow(Cr); plt.title('YCrCb_Cr')
+plt.subplot(144); plt.imshow(Cb); plt.title('YCrCb_Cb')
+
+plt.figure(figsize=[15, 5])
+plt.subplot(141); plt.imshow(rgb3); plt.title('RGB original')
+plt.subplot(142); plt.imshow(y2, cmap='gray'); plt.title('YCrCb_Y')
+plt.subplot(143); plt.imshow(Cr1); plt.title('YCrCb_Cr')
+plt.subplot(144); plt.imshow(Cb1); plt.title('YCrCb_Cb')
+
+plt.figure(figsize=[15, 5])
+plt.subplot(141); plt.imshow(rgb4); plt.title('RGB original')
+plt.subplot(142); plt.imshow(y3, cmap='gray'); plt.title('YCrCb_Y')
+plt.subplot(143); plt.imshow(Cr2); plt.title('YCrCb_Cr')
+plt.subplot(144); plt.imshow(Cb2); plt.title('YCrCb_Cb')
+
+plt.figure(figsize=[15, 5])
+plt.subplot(141); plt.imshow(rgb5); plt.title('RGB original')
+plt.subplot(142); plt.imshow(y4, cmap='gray'); plt.title('YCrCb_Y')
+plt.subplot(143); plt.imshow(Cr3); plt.title('YCrCb_Cr')
+plt.subplot(144); plt.imshow(Cb3); plt.title('YCrCb_Cb')
+
+plt.figure(figsize=[15, 5])
+plt.subplot(141); plt.imshow(rgb6); plt.title('RGB original')
+plt.subplot(142); plt.imshow(y5, cmap='gray'); plt.title('YCrCb_Y')
+plt.subplot(143); plt.imshow(Cr4); plt.title('YCrCb_Cr')
+plt.subplot(144); plt.imshow(Cb4); plt.title('YCrCb_Cb')
+
+
