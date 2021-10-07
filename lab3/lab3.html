@@ -60,10 +60,11 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
           </audio>
          </div>
 		
-		<a>Texto Novo***Texto Novo***Texto Novo***Texto Novo***Texto Novo***Texto Novo***Texto Novo***Texto Novo***Texto Novo***
-		Texto Novo***Texto Novo***Texto Novo***Texto Novo***Texto Novo***Texto Novo***Texto Novo***Texto Novo***Texto Novo***
-		Texto Novo***Texto Novo***Texto Novo***Texto Novo***Texto Novo***Texto Novo***Texto Novo***Texto Novo***Texto Novo***
-		Texto Novo***Texto Novo***Texto Novo***Texto Novo***Texto Novo***Texto Novo***Texto Novo***Texto Novo***Texto Novo***</a>
+		<a>
+		O objetivo desta pratica é aprofundar compreensão em processos de manipulação de imagem e animação, utilizando as limitações da percepção visual humana para criação de efeitos,
+ou simplesmente para economia de memória de armazenamento de dados. Na primeira parte desta prática será produzido um vídeo de animação com Blender, em seguida, na parte 2 serão efetuadas conversões entre espaços de cores. 
+		Na parte 3 serão comparados arquivos comprimidos JPEG . Por fim, na 4ª parte será detalhado o processo de compressão de imagem utilizando a transformada discreta de cosseno, 
+		também conhecida como DCT .</a>
 		
 	<h4><b>Parte 4 - Compressão de Imagem com DCT</b></h4>
       <div class="w3-row-padding w3-padding-16">
@@ -71,8 +72,9 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
           <source src="audios/Parte4_1.ogg" type="audio/ogg">
            Your browser does not support the audio element.
          </audio>
-       <p>Nesta etapa do laboratório será feita a compressão de uma imagem utilizando a Transformada discreta de cosseno.
-		Primeiramete, foi selecionado um fragmento de imagem 60x60 com bom contraste e isolada a componente Y, do padrão Y, cr,cb.  </p>
+       <p>Nesta etapa da prática será feita a compressão de uma imagem utilizando a Transformada discreta de cosseno.
+		Primeiramete, foi selecionado um fragmento de imagem 60x60 com bom contraste. Será trabalhada a componente Y, do padrão Y, cr,cb
+		sendo este correspondente a escala de cinza. A imagem escolhida corresponde à uma bola de futebol e é exibida abaixo em tamanho original e em preto e branco.  </p>
 	   <center><img src="imagens/bola.jpg" alt="Grupo"></center>
 	   <i><center><a>Fig 4.1- Bola 60x60</a></center/></i>
 	   
@@ -80,13 +82,13 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
           <source src="audios/Parte4_2.ogg" type="audio/ogg">
            Your browser does not support the audio element.
          </audio>
-       <p>Uma matriz 60x60 ainda é uma matriz grande para o processamento da DCT e para a visualização da matriz numérica, assim foi selecionado um bloco 8x8.
-		  Abaixo estão em sequencia: a imagem original ampliada com a região selecionada destacada em vermelho, o bloco y 8x8, e´por fim sua representação matricial.
+       <p>Uma matriz 60x60 ainda é uma matriz grande para o processamento da DCT e também para sua visualização e manipulação numérica, assim foi selecionado um bloco 8x8.
+		  Abaixo estão em sequencia: a imagem original ampliada com o bloco selecionado destacado em vermelho, em seguida o detalhe do bloco y 8x8, e´por fim sua representação matricial.
        </p>
 	   <center><img src="imagens/BolaMarca.bmp" alt="Grupo P&B" style="width:15%;">
 	   <img src="imagens/original.bmp" alt="Grupo P&B">
 	   <img src="imagens/matrizOriginal.jpg" alt="Grupo P&B"></center>
-	   <i><center><a>Fig 4.2- Imagem original, Bloco y 8x8, Matriz y</a></center/></i>
+	   <i><center><a>Fig 4.2- Imagem original(redimensionada) , Bloco y 8x8, Matriz y</a></center/></i>
 	   
 	   <audio controls>
           <source src="audios/parte4_3.ogg" type="audio/ogg">
@@ -102,7 +104,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
           <source src="audios/parte4_4.ogg" type="audio/ogg">
            Your browser does not support the audio element.
          </audio>
-       <p>Finalmente, fez-se o calculo da transformada discreta de cosseno, obtendo-se a seguinte matriz.Utilizou-se o método "cv.dct()" </p>
+       <p>Finalmente, fez-se o calculo da transformada discreta de cosseno, obtendo-se a seguinte matriz. Utilizou-se o método "cv.dct()" </p>
        <i><center><img src="imagens/matrizDct.jpg" alt="Avatares"></center></i>
 	   <i><center><p>Fig4.4 - Matriz DCT </p></center/></i>
 	   
