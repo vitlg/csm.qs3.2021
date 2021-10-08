@@ -201,7 +201,18 @@ ou simplesmente para economia de memória de armazenamento de dados. Na primeira
        <p>Finalmente foi feita a transformada inversa nas versões comprimidas atravez do método cv.idct(), gerando as imagens apresentadas abaixo. 
 	   À esquerda está original para comparação. Observe que quanto mais drástica a compressão, mais suave é a variação de intensidade da cor entre bits anexos.</p>
 	   <i><center><img src="imagens/comparacao.bmp" alt="Avatares"></center></i>
-	   <i><center><p>Fig4.5 - Matrizes resultantes da compressão</p></center/></i>
+	   <i><center><p>Fig4.5 - comparação entre blocos 8x8 bits</p></center/></i>
+	   
+	   <audio controls>
+          <source src="audios/parte4_7.ogg" type="audio/ogg">
+           Your browser does not support the audio element.
+         </audio>
+       <p>Como complemento a esta última parte da prática, e para melhor visualização dos efeitos dessa compressão, executou-se uma modificação no código para que a compressão por DCT fosse feita em toda a imagem da bola.
+	   Para este procedimento alterou-se a dimensão do recorte da bola para 64x64. Foi mantido o processo de compressão em blocos de 8x8, contudo, com o metodo
+	   "while" foi feito um loop, para que este passo fosse repetido em cada um dos 64 blocos. O resultado obtido está abaixo. À esquerda a imagem original, seguida
+	   pela compressao retirando 8 diagonais, e depois pela que retira 10 diagonais da DCT de Y.</p>
+	   <i><center><img src="imagens/BolasComprimidas.JPG" alt="Bolas Comprimidas"></center></i>
+	   <i><center><p>Fig4.5 - Comparação entre imagens 64x64</p></center/></i>
 	   
 	   
 	   
@@ -209,19 +220,7 @@ ou simplesmente para economia de memória de armazenamento de dados. Na primeira
 	   
      </div> 
    </div> 
-    
-     <div class="w3-row-padding w3-padding-16">
-      <h4><b>Vídeos</b></h4>
-      <div class="w3-row-padding w3-padding-16">
-          <audio controls>
-          <source src="audios/descricaovideos.mp3" type="audio/mp3">
-           Your browser does not support the audio element.
-          </audio>
-	      
-	      
-      
-     </div>      
-    </div>    
+       
         
         
      <div class="w3-row-padding w3-padding-16">
