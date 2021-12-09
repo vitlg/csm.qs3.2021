@@ -50,7 +50,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
   </header>
   
   <div class="w3-row-padding w3-padding-16">
-  <h2><b>LAB 4 - Codificação de Imagem com DWT</b></h2>
+  <h2><b>LAB 8 - Codificação de Áudio</b></h2>
     <div class="w3-row-padding w3-padding-16">
 		<h4><b>Objetivos</b></h4>
 		 <div class="w3-row-padding w3-padding-16">
@@ -61,19 +61,16 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
          </div>
 		
 		<a>
-		O objetivo desta prática é efetuar a Codificação de Imagem e a Decodificação por DWT e IDWT, neste processo serão testadas as funções de Codificação Multinível.
-		Finalmente, e também será verificada a taxa de compressão só com a Componente de Aproximação</a>
+		O objetivo desta prática é efetuar a Codificação de Áudio, diminuindo as taxas de compressão e analisando os espectrogramas.</a>
 		
-	<h4><b>Parte 1 - Componentes do primeiro nivel de DWT em P&B </b></h4>
+	<h4><b>Parte 1 - Diminuição das Taxas de Compressão</b></h4>
       <div class="w3-row-padding w3-padding-16"></div>
 	<audio controls>
           <source src="audios/descricaovideo.mp3" type="audio/mp3">
 		   Your browser does not support the audio element.
         </audio>
-		 <p> A transformada discreta de Wavelet divide a informação da imagem em quatro componentes. A componente de Aproximação é a componente que contem as principais informações da imagem,
-sendo uma boa aproximação da imagem original, mas com metade da resolução, as outras tres componentes correspondem às componentes verticais, horizontas, e diagonais.
-Abaixo está o resultado da transformada discreta de wavelet para as componentes preto e Branco das imagens dos integrantes do grupo. Para esta operação foi utilizado o método pywt.dwt2().</p>
-		 <center><img src="fotos/dan1.png" alt="Daniel"></center>
+		 <p> Resolvemos apresentar os espectrogramas em forma de GIF para facilitar a visualização da diferença entre as taxas </p>
+		 <center><img src="abba/abbagif01.gif" alt="Arquivo Original do Lab"></center>
 	    <i><center><a>Fig 1.1 - DWT Daniel</a></center/></i>  
 		<center><img src="fotos/ed1.png" alt="Edson"></center>
 	    <i><center><a>Fig 1.2 - DWT Edson</a></center/></i>
