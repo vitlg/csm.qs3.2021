@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+<title>UFABC - CSM - GRUPO 14</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+</style>
+<body class="w3-light-grey w3-content" style="max-width:1600px">
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
+  <div class="w3-container">
+    <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
+      <i class="fa fa-remove"></i>
+    </a>
+    <img src="https://metabuscador.uspdigital.usp.br/image/logos_128x128/ufabc.png" style="width:45%;" class="w3-round"><br><br>
+    <h4><b>UFABC</b></h4>
+    <p class="w3-text-grey">Prof Mário Minami</p>
+  </div>
+  <div class="w3-bar-block">
+    <a href="../index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-th-large fa-fw w3-margin-right"></i>HOME</a> 
+  </div>
+  <div class="w3-panel w3-large">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:300px">
+
+  <!-- Header -->
+  <header id="portfolio">
+    <a href="#"><img src="/w3images/avatar_g2.jpg" style="width:65px;" class="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity"></a>
+    <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
+    <div class="w3-container">
+    <h1><b>ESTI019 - Codificação de Sinais Multimidia - 3QS21 - Noturno</b></h1>
+    </div>
+  </header>
+  
+  <div class="w3-row-padding w3-padding-16">
+  <h2><b>LAB 9 - MIDI e Simulação de ambientes acústicos (IR)</b></h2>
+    <div class="w3-row-padding w3-padding-16">
+		<h4><b>Objetivos</b></h4>
+		 <div class="w3-row-padding w3-padding-16">
+          <audio controls>
+          <source src="audios/Lab9Objetivo.ogg" type="audio/ogg">
+           Your browser does not support the audio element.
+          </audio>
+         </div>
+		
+		<a>
+		Introduzir o processo tecnico de manipulação sonora a partir de sintetizadores, gerando e reproduzindo tons por manipulação direta da frequequencia, e utilizando também os recursos do formato MIDI para a geração e reprodução de audios.
+		Além disso será feita a simulação da resposta impulsiva às ondas sonoras em alguns ambientes.</a>
+		
+	<h4><b>Parte 1 - </b></h4>
+      <div class="w3-row-padding w3-padding-16"></div>
+	<audio controls>
+          <source src="audios/descricaovideo.mp3" type="audio/mp3">
+		   Your browser does not support the audio element.
+        </audio>
+	<h5><b>Vídeo:</b></h5>
+       <video width="620" height="540" controls>
+       <source src="video/animacaolab3.mp4" type="video/mp4">
+       Your browser does not support the video tag.
+       </video>
+	    
+	    
+	<h4><b>Parte 2 - </b></h4>
+	  <div class="w3-row-padding w3-padding-16"></div>
+	    <audio controls>
+          <source src="audios/2_1.ogg" type="audio/ogg">
+		   Your browser does not support the audio element.
+        </audio>
+	  <p> Nesta etapa, separamos os canais de cores e os rearranjamos formar uma imagem BGR  </p>
+	   <center><img src="imagens/RGB_BGR.JPG" alt="Grupo"></center>
+	   <i><center><a>Fig 2.1 - RGB para GBR</a></center/></i>   
+	   <center><img src="imagens/21_Grupo.JPG" alt="Grupo"></center>
+	   <i><center><a>Fig 2.2 - RGB para GBR</a></center/></i>  
+	   
+	    <audio controls>
+          <source src="audios/2_2.ogg" type="audio/ogg">
+		   Your browser does not support the audio element.
+        </audio>
+	  <p> Nesta etapa, trabalhamos os canais de cores, alterando sua saturação, hue e value, para formarmos imagens no padrão YCrCb e HSV</p>
+	   <center><img src="imagens/2_yrcr.jpg" alt="Grupo"></center>
+	   <i><center><a>Fig 2.3 - YCrCb e HSV </a></center/></i>  	  
+	   <center><img src="imagens/22_Grupo.JPG" alt="Grupo"></center>
+	   <i><center><a>Fig 2.4 - YCrCb </a></center/></i>  	  
+	   <center><img src="imagens/23_Grupo.JPG" alt="Grupo"></center>   
+	   <i><center><a>Fig 2.5 - HSV </a></center/></i>  		  
+	    <audio controls>
+          <source src="audios/2_3.ogg" type="audio/ogg">
+		   Your browser does not support the audio element.
+        </audio>
+	  <p> Nesta etapa, separamos as camadas R, G e B e realocamos de forma que apenas uma delas apareça na impressão</p>
+	   <center><img src="imagens/RGB.JPG" alt="Grupo"></center>
+	   <i><center><a>Fig 2.6 - R, G, e B em camadas separadas</a></center/></i>  	  
+	   <center><img src="imagens/B_Grupo.JPG" alt="Grupo"></center>
+	   <i><center><a>Fig 2.7 - Camada R </a></center/></i>  	  
+	   <center><img src="imagens/G_Grupo.JPG" alt="Grupo"></center>   
+	   <i><center><a>Fig 2.8 - Camada G </a></center/></i>  	 	   
+	   <center><img src="imagens/R_Grupo.JPG" alt="Grupo"></center>   
+	   <i><center><a>Fig 2.9 - Camada B </a></center/></i>  	 	
+		    <audio controls>
+          <source src="audios/2_4.ogg" type="audio/ogg">
+		   Your browser does not support the audio element.
+			    
+        </audio>
+	  <p> Nesta etapa, trabalhamos as imagens no padrão YCrCb, com cada uma das imagens focada em um de seus canais.</p>
+	   <center><img src="imagens/cr.JPG" alt="Grupo"></center>
+	   <i><center><a>Fig 2.10 - YCrCb e seus canais </a></center/></i>  	  
+	   <center><img src="imagens/y1_Grupo.JPG" alt="Grupo"></center>
+	   <i><center><a>Fig 2.11 - Canal Y </a></center/></i>  	  
+	   <center><img src="imagens/Cr_Grupo.JPG" alt="Grupo"></center>   
+	   <i><center><a>Fig 2.12 - Canal Cr </a></center/></i>  	
+	   <center><img src="imagens/5_Grupo.JPG" alt="Grupo"></center>   
+	   <i><center><a>Fig 2.13 - Canal Cb </a></center/></i>  
+	
+		   
+	<h4><b>Parte 3 -</b></h4>
+      <div class="w3-row-padding w3-padding-16"></div>
+	<audio controls>
+          <source src="audios/3_1.ogg" type="audio/ogg">
+		   Your browser does not support the audio element.
+        </audio>
+	  <p> Nesta etapa, trabalhamos a qualidade das imagens com diferentes níveis de compressão.</p>
+	   <center><img src="imagens/qualidade.JPG" alt="Grupo"></center>
+	   <i><center><a>Fig 3.1 - Foto original e com compressão 25% e 5% </a></center/></i>  
+	
+	    <audio controls>
+          <source src="audios/3_2.ogg" type="audio/ogg">
+		   Your browser does not support the audio element.
+        </audio>
+	  <p> Abaixo, temos a tabela de comparação entre as imagens originais e após o processo de compressão.</p>
+	   <center><img src="imagens/3comparacao.jpg" alt="Grupo"></center>
+	   <i><center><a>Tabela 3.1 - Tamanho das fotos originais e após compressão </a></center/></i>  	
+	
+		
+	<h4><b>Parte 4 - Compressão de Imagem com DCT</b></h4>
+      <div class="w3-row-padding w3-padding-16">
+        <audio controls>
+          <source src="audios/parte4_1.ogg" type="audio/ogg">
+           Your browser does not support the audio element.
+         </audio>
+       <p>Nesta etapa da prática será feita a compressão de uma imagem utilizando a Transformada discreta de cosseno.
+		Primeiramete, foi selecionado um fragmento de imagem 60x60 com bom contraste. Será trabalhada a componente Y, do padrão Y, cr,cb
+		sendo este correspondente a escala de cinza. A imagem escolhida corresponde à uma bola de futebol e é exibida abaixo em tamanho original e em preto e branco.  </p>
+	   <center><img src="imagens/bola.jpg" alt="Grupo"></center>
+	   <i><center><a>Fig 4.1- Bola 60x60</a></center/></i>
+	   
+	   <audio controls>
+          <source src="audios/parte4_2.ogg" type="audio/ogg">
+           Your browser does not support the audio element.
+         </audio>
+       <p>Uma matriz 60x60 ainda é uma matriz grande para o processamento da DCT e também para sua visualização e manipulação numérica, assim foi selecionado um bloco 8x8.
+		  Abaixo estão em sequencia: a imagem original ampliada com o bloco selecionado destacado em vermelho, em seguida o detalhe do bloco y 8x8, e´por fim sua representação matricial.
+       </p>
+	   <center><img src="imagens/bolaMarca.bmp" alt="Grupo P&B" style="width:150px;">
+	   <img src="imagens/original.bmp" alt="Grupo P&B">
+	   <img src="imagens/matrizOriginal.JPG" alt="Grupo P&B"></center>
+	   <i><center><a>Fig 4.2- Imagem original(redimensionada) , Bloco y 8x8, Matriz y</a></center/></i>
+	   
+	   <audio controls>
+          <source src="audios/parte4_3.ogg" type="audio/ogg">
+           Your browser does not support the audio element.
+         </audio>
+       <p>Para operar a DCT se faz necessário converter a matriz para ponto flutuante. Para essa operação utilizou-se o método np.float32()
+	   resultando na matriz apresentada abaixo</p>
+	   <center><img src="imagens/matrizFloat.JPG" alt="Grupo 50%"></center>
+	   <i><center><a>Fig 4.3- Matriz float </a></center></i>
+  
+	 
+	   <audio controls>
+          <source src="audios/parte4_4.ogg" type="audio/ogg">
+           Your browser does not support the audio element.
+         </audio>
+       <p>Finalmente, fez-se o calculo da transformada discreta de cosseno, obtendo-se a seguinte matriz. Utilizou-se o método "cv.dct()" </p>
+       <i><center><img src="imagens/matrizDCT.JPG" alt="Avatares"></center></i>
+	   <i><center><p>Fig4.4 - Matriz DCT </p></center/></i>
+	   
+	   <audio controls>
+          <source src="audios/parte4_5.ogg" type="audio/ogg">
+           Your browser does not support the audio element.
+         </audio>
+       <p>A compressão via DCT consiste em eliminar as componentes de alta frequencia, que são menos perceptiveis ao sistema visual humano.
+	   Na matriz DCT da imagem, estas componentes se encontram na região inferior direita da matriz. Assim pode-se "zerar" as componentes dessa região.</P>
+	   <P>Abaixo, fez-se duas compressões: Uma eliminando todos os componentes à direita da diagonal secundaria da matriz, inclusive esta. A segunda compressão
+	   foi mais drástica eliminou mais duas diagonais acima da diagonal secundária. A representação matricial destas operações seguem abaixo, sendo que estas 
+	   operações foram feitas matematicamente sem uso de método especial.</p>
+       <i><center><img src="imagens/DCTcompressao1.JPG" alt="Avatares"><img src="imagens/DCTcompressao2.jpg" alt="Avatares"></center></i>
+	   <i><center><p>Fig4.5 - Matrizes 1 e 2 resultantes da compressão</p></center/></i>
+	   
+	   <audio controls>
+          <source src="audios/parte4_6.ogg" type="audio/ogg">
+           Your browser does not support the audio element.
+         </audio>
+       <p>Finalmente foi feita a transformada inversa nas versões comprimidas atravez do método cv.idct(), gerando as imagens apresentadas abaixo. 
+	   À esquerda está original para comparação. Observe que quanto mais drástica a compressão, mais suave é a variação de intensidade da cor entre bits anexos.</p>
+	   <i><center><img src="imagens/comparacao.bmp" alt="Avatares"></center></i>
+	   <i><center><p>Fig4.6 - comparação entre blocos 8x8</p></center/></i>
+	   
+	   <audio controls>
+          <source src="audios/parte4_7.ogg" type="audio/ogg">
+           Your browser does not support the audio element.
+         </audio>
+       <p>Como complemento a esta última parte da prática, e para melhor visualização dos efeitos dessa compressão, executou-se uma modificação no código para que a compressão por DCT fosse feita em toda a imagem da bola.
+	   Para este procedimento alterou-se a dimensão do recorte da bola para 64x64. Foi mantido o processo de compressão em blocos de 8x8, contudo, com o metodo
+	   "while" foi feito um loop, para que este passo fosse repetido em cada um dos 64 blocos. O resultado obtido está abaixo. À esquerda a imagem original, seguida
+	   pela compressao retirando 8 diagonais, e depois pela que retira 10 diagonais da DCT de Y.</p>
+	   <i><center><img src="imagens/BolasComprimidas.JPG" alt="Bolas Comprimidas"></center></i>
+	   <i><center><p>Fig4.7 - Comparação entre imagens 64x64</p></center/></i>
+	   
+	   
+	   
+	   
+	   
+     </div> 
+   </div> 
+       
+        
+        
+     <div class="w3-row-padding w3-padding-16">
+      <h4><b>Arquivos .ipynb para download:</b></h4>
+      <div class="w3-row-padding w3-padding-16">
+        
+        <a href="Colab_Lab3_2021/Lab3_grupo_14.ipynb" download="Lab3_grupo_14.ipynb">Código utilizado</a><br/>
+        
+ 
+     </div>      
+    </div>   
+          
+        
+    </div>
+  </div>
+ 
+  <!-- Footer -->
+  <footer class="w3-container w3-padding-32 w3-dark-grey">
+  <div class="w3-row-padding">
+    <div class="w3-third">
+      <h3>RESUMO</h3>
+      <p>Página dedicada à disciplina de Codificação de Sinais Multimidia</p>
+      <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+    </div>
+  
+    <div class="w3-third">
+      <h3>MATÉRIAS RELACIONADAS</h3>
+      <ul class="w3-ul w3-hoverable">
+        <li class="w3-padding-16">
+          <a href="https://www.uol.com.br/tilt/noticias/redacao/2021/09/02/som-e-imagem-juntinhos-saiba-como-funcionam-os-cabos-hdmi.htm">
+          <img src="https://cdn1.iconfinder.com/data/icons/computer-hardware-529/64/Hdmi-electronic-device-multimedia-technology-256.png" class="w3-left w3-margin-right" style="width:30px">
+          <span class="w3-large">Vídeo</span><br>
+          <span>Som e imagem juntinhos: saiba como funcionam os cabos HDMI</span>
+          </a>
+        </li>
+        <li class="w3-padding-16">
+          <a href="https://musicaemercado.org/compreendendo-a-taxa-de-amostragem-e-como-isso-afeta-o-mercado-do-audio/">
+          <img src="https://cdn1.iconfinder.com/data/icons/communication-and-wireless-network-vol-4/520/communication_network_wifi_device_eletronic_wireless_-_4-256.png" class="w3-left w3-margin-right" style="width:30px">
+          <span class="w3-large">Áudio</span><br>
+          <span>Compreendendo a taxa de amostragem e como isso afeta o mercado do áudio</span>
+          </a>  
+        </li> 
+      </ul>
+    </div>
+
+    <div class="w3-third">
+      <h3>TAGS</h3>
+      <p>
+        <span class="w3-tag w3-black w3-margin-bottom">UFABC</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">São Paulo</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">Eng Info</span>
+        <span class="w3-tag w3-grey w3-small w3-margin-bottom">Áudio</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">Vídeo</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">DIY</span>
+        <span class="w3-tag w3-grey w3-small w3-margin-bottom">Inovação</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">Labs</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">Grupo</span>
+        <span class="w3-tag w3-grey w3-small w3-margin-bottom">Santo André</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">Tech</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">Codificação</span>
+        <span class="w3-tag w3-grey w3-small w3-margin-bottom">Voz</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">Games</span>
+      </p>
+    </div>
+
+  </div>
+  </footer>
+  
+  <div class="w3-black w3-center w3-padding-24">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></div>
+
+<!-- End page content -->
+</div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+</script>
+
+</body>
+</html>
+
