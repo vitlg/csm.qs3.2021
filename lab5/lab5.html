@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html>
+<title>UFABC - CSM - GRUPO 14</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+</style>
+<body class="w3-light-grey w3-content" style="max-width:1600px">
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
+  <div class="w3-container">
+    <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
+      <i class="fa fa-remove"></i>
+    </a>
+    <img src="https://metabuscador.uspdigital.usp.br/image/logos_128x128/ufabc.png" style="width:45%;" class="w3-round"><br><br>
+    <h4><b>UFABC</b></h4>
+    <p class="w3-text-grey">Prof Mário Minami</p>
+  </div>
+  <div class="w3-bar-block">
+    <a href="../index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-th-large fa-fw w3-margin-right"></i>HOME</a> 
+  </div>
+  <div class="w3-panel w3-large">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:300px">
+
+  <!-- Header -->
+  <header id="portfolio">
+    <a href="#"><img src="/w3images/avatar_g2.jpg" style="width:65px;" class="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity"></a>
+    <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
+    <div class="w3-container">
+    <h1><b>ESTI019 - Codificação de Sinais Multimidia - 3QS21 - Noturno</b></h1>
+    </div>
+  </header>
+  
+  <div class="w3-row-padding w3-padding-16">
+  <h2><b>LAB 4 - Codificação de Imagem com DWT</b></h2>
+    <div class="w3-row-padding w3-padding-16">
+		<h4><b>Objetivos</b></h4>
+		 <div class="w3-row-padding w3-padding-16">
+          <audio controls>
+          <source src="audios/DescricaoObjetivo.ogg" type="audio/ogg">
+           Your browser does not support the audio element.
+          </audio>
+         </div>
+		
+		<a>
+		Esta prática sobre percepção auditiva tem como propósito estudar as características psicoacústicas da audição humana.
+		Para isso, cada integrante do grupo realizou testes psicoacústicos, do site https://hearingtest.online/:</a>
+		
+	<h4><b>Parte 1 - Teste de audiometria </b></h4>
+      <div class="w3-row-padding w3-padding-16"></div>
+	<audio controls>
+          <source src="audios/descricaovideo.mp3" type="audio/mp3">
+		   Your browser does not support the audio element.
+        </audio>
+		 <p> Cada integrante realizou o teste com e sem fone de ouvido, anotando seus resultados.</p>
+		 <center><img src="fotos/dan1.png" alt="Daniel"></center>
+	    <i><center><a>Fig 1.1 - Resultado Daniel sem fone</a></center/></i>  
+		 <center><img src="fotos/dan2.png" alt="Daniel"></center>
+	    <i><center><a>Fig 1.2 - Resultado Daniel com fone</a></center/></i>  
+		 <center><img src="fotos/edson1.png" alt="Daniel"></center>
+	    <i><center><a>Fig 1.3 - Resultado Edson sem fone</a></center/></i>  
+		 <center><img src="fotos/edson2.png" alt="Daniel"></center>
+	    <i><center><a>Fig 1.4 - Resultado Edson com fone</a></center/></i>  
+		 <center><img src="fotos/edu1.png" alt="Daniel"></center>
+	    <i><center><a>Fig 1.5 - Resultado Eduardo sem fone</a></center/></i>  
+		 <center><img src="fotos/edu2.png" alt="Daniel"></center>
+	    <i><center><a>Fig 1.6 - Resultado Eduardo com fone</a></center/></i>  
+		 <center><img src="fotos/vitor1.png" alt="Daniel"></center>
+	    <i><center><a>Fig 1.7 - Resultado Vitor sem fone</a></center/></i>  
+		 <center><img src="fotos/vitor2.png" alt="Daniel"></center>
+	    <i><center><a>Fig 1.8 - Resultado Vitor com fone</a></center/></i>  
+
+		
+	<h4><b>Parte 2 - Calculo do Erro Quadrático Médio (MSE) e Relação Sinal Ruido de Pico (PSNR) </b></h4>
+      <div class="w3-row-padding w3-padding-16"></div>
+	<audio controls>
+          <source src="audios/descricaovideo.mp3" type="audio/mp3">
+		   Your browser does not support the audio element.
+        </audio>
+		 <p> Nesta etapa foi feita a comparação da reconstrução da imagem a partir da DWT, com a ima gem original. 
+		 O erro quedrático médio é calculado do pixel da imagem original em relação ao pixel da imagem reconstruida. </p>
+		 <center><img src="fotos/dan2.png" alt="Daniel"></center>
+	    <i><center><a>Fig 2.1 - DWT Daniel MSE = 81,865</a></center/></i>  
+		<center><img src="fotos/ed2.png" alt="Edson"></center>
+	    <i><center><a>Fig 2.2 - DWT Edson MSE = 51,653</a></center/></i>
+		<center><img src="fotos/edu2.png" alt="Eduardo"></center>
+	    <i><center><a>Fig 2.3 - DWT Eduardo MSE = 0,081</a></center/></i>
+		<center><img src="fotos/vito2.png" alt="Vitor"></center>
+	    <i><center><a>Fig 2.4 - DWT Vitor MSE = 81,865</a></center/></i>
+		
+		b>Parte 3 -  </b></h4>
+      <div class="w3-row-padding w3-padding-16"></div>
+	<audio controls>
+          <source src="audios/descricaovideo.mp3" type="audio/mp3">
+		   Your browser does not support the audio element.
+        </audio>
+		 <p> Nesta etapa foi feita a comparação da reconstrução da imagem a partir da DWT, com a ima gem original. 
+		 O erro quedrático médio é calculado do pixel da imagem original em relação ao pixel da imagem reconstruida. </p>
+		 <center><img src="fotos/dan3.png" alt="Daniel"></center>
+	    <i><center><a>Fig 3.1 - DWT Daniel MSE = 81,865</a></center/></i>  
+		<center><img src="fotos/ed3.png" alt="Edson"></center>
+	    <i><center><a>Fig 3.2 - DWT Edson MSE = 51,653</a></center/></i>
+		<center><img src="fotos/edu3.png" alt="Eduardo"></center>
+	    <i><center><a>Fig 3.3 - DWT Eduardo MSE = 0,081</a></center/></i>
+		<center><img src="fotos/vito3.png" alt="Vitor"></center>
+	    <i><center><a>Fig 3.4 - DWT Vitor MSE = 81,865</a></center/></i>
+		
+		<b>Parte 4 -  </b></h4>
+      <div class="w3-row-padding w3-padding-16"></div>
+	<audio controls>
+          <source src="audios/descricaovideo.mp3" type="audio/mp3">
+		   Your browser does not support the audio element.
+        </audio>
+		 <p> Nesta etapa foi feita a comparação da reconstrução da imagem a partir da DWT, com a ima gem original. 
+		 O erro quedrático médio é calculado do pixel da imagem original em relação ao pixel da imagem reconstruida. </p>
+		 <center><img src="fotos/dan4.png" alt="Daniel"></center>
+	    <i><center><a>Fig 4.1 - DWT Daniel MSE = 81,865</a></center/></i>  
+		<center><img src="fotos/ed4.png" alt="Edson"></center>
+	    <i><center><a>Fig 4.2 - DWT Edson MSE = 51,653</a></center/></i>
+		<center><img src="fotos/edu4.png" alt="Eduardo"></center>
+	    <i><center><a>Fig 4.3 - DWT Eduardo MSE = 0,081</a></center/></i>
+		<center><img src="fotos/vito4.png" alt="Vitor"></center>
+	    <i><center><a>Fig 4.4 - DWT Vitor MSE = 81,865</a></center/></i>
+		
+		<b>Parte 5 -  </b></h4>
+      <div class="w3-row-padding w3-padding-16"></div>
+	<audio controls>
+          <source src="audios/descricaovideo.mp3" type="audio/mp3">
+		   Your browser does not support the audio element.
+        </audio>
+		 <p> Nesta etapa foi feita a comparação da reconstrução da imagem a partir da DWT, com a ima gem original. 
+		 O erro quedrático médio é calculado do pixel da imagem original em relação ao pixel da imagem reconstruida. </p>
+		 <center><img src="fotos/dan5.png" alt="Daniel"></center>
+	    <i><center><a>Fig 5.1 - DWT Daniel MSE = 81,865</a></center/></i>  
+		<center><img src="fotos/ed5.png" alt="Edson"></center>
+	    <i><center><a>Fig 5.2 - DWT Edson MSE = 51,653</a></center/></i>
+		<center><img src="fotos/edu5.png" alt="Eduardo"></center>
+	    <i><center><a>Fig 5.3 - DWT Eduardo MSE = 0,081</a></center/></i>
+		<center><img src="fotos/vito5.png" alt="Vitor"></center>
+	    <i><center><a>Fig 5.4 - DWT Vitor MSE = 81,865</a></center/></i>
+		
+		<b>Parte 6 -  </b></h4>
+      <div class="w3-row-padding w3-padding-16"></div>
+	<audio controls>
+          <source src="audios/descricaovideo.mp3" type="audio/mp3">
+		   Your browser does not support the audio element.
+        </audio>
+		 <p> Nesta etapa foi feita a comparação da reconstrução da imagem a partir da DWT, com a ima gem original. 
+		 O erro quedrático médio é calculado do pixel da imagem original em relação ao pixel da imagem reconstruida. </p>
+		 <center><img src="fotos/dan6.png" alt="Daniel"></center>
+	    <i><center><a>Fig 6.1 - DWT Daniel MSE = 81,865</a></center/></i>  
+		<center><img src="fotos/ed6.png" alt="Edson"></center>
+	    <i><center><a>Fig 6.2 - DWT Edson MSE = 51,653</a></center/></i>
+		<center><img src="fotos/edu6.png" alt="Eduardo"></center>
+	    <i><center><a>Fig 6.3 - DWT Eduardo MSE = 0,081</a></center/></i>
+		<center><img src="fotos/vito6.png" alt="Vitor"></center>
+	    <i><center><a>Fig 6.4 - DWT Vitor MSE = 81,865</a></center/></i>
+		
+		<b>Parte 7 -  </b></h4>
+      <div class="w3-row-padding w3-padding-16"></div>
+	<audio controls>
+          <source src="audios/descricaovideo.mp3" type="audio/mp3">
+		   Your browser does not support the audio element.
+        </audio>
+		 <p> Nesta etapa foi feita a comparação da reconstrução da imagem a partir da DWT, com a ima gem original. 
+		 O erro quedrático médio é calculado do pixel da imagem original em relação ao pixel da imagem reconstruida. </p>
+		 <center><img src="fotos/dan7.png" alt="Daniel"></center>
+	    <i><center><a>Fig 7.1 - DWT Daniel MSE = 81,865</a></center/></i>  
+		<center><img src="fotos/ed7.png" alt="Edson"></center>
+	    <i><center><a>Fig 7.2 - DWT Edson MSE = 51,653</a></center/></i>
+		<center><img src="fotos/edu7.png" alt="Eduardo"></center>
+	    <i><center><a>Fig 7.3 - DWT Eduardo MSE = 0,081</a></center/></i>
+		<center><img src="fotos/vito7.png" alt="Vitor"></center>
+	    <i><center><a>Fig 7.4 - DWT Vitor MSE = 81,865</a></center/></i>
+		
+		<b>Parte 8 -  </b></h4>
+      <div class="w3-row-padding w3-padding-16"></div>
+	<audio controls>
+          <source src="audios/descricaovideo.mp3" type="audio/mp3">
+		   Your browser does not support the audio element.
+        </audio>
+		 <p> Nesta etapa foi feita a comparação da reconstrução da imagem a partir da DWT, com a ima gem original. 
+		 O erro quedrático médio é calculado do pixel da imagem original em relação ao pixel da imagem reconstruida. </p>
+		 <center><img src="fotos/dan8.png" alt="Daniel"></center>
+	    <i><center><a>Fig 8.1 - DWT Daniel MSE = 81,865</a></center/></i>  
+		<center><img src="fotos/ed8.png" alt="Edson"></center>
+	    <i><center><a>Fig 8.2 - DWT Edson MSE = 51,653</a></center/></i>
+		<center><img src="fotos/edu8.png" alt="Eduardo"></center>
+	    <i><center><a>Fig 8.3 - DWT Eduardo MSE = 0,081</a></center/></i>
+		<center><img src="fotos/vito8.png" alt="Vitor"></center>
+	    <i><center><a>Fig 8.4 - DWT Vitor MSE = 81,865</a></center/></i>
+		
+		<b>Parte 9 -  </b></h4>
+      <div class="w3-row-padding w3-padding-16"></div>
+	<audio controls>
+          <source src="audios/descricaovideo.mp3" type="audio/mp3">
+		   Your browser does not support the audio element.
+        </audio>
+		 <p> Nesta etapa foi feita a comparação da reconstrução da imagem a partir da DWT, com a ima gem original. 
+		 O erro quedrático médio é calculado do pixel da imagem original em relação ao pixel da imagem reconstruida. </p>
+		 <center><img src="fotos/dan9.png" alt="Daniel"></center>
+	    <i><center><a>Fig 9.1 - DWT Daniel MSE = 81,865</a></center/></i>  
+		<center><img src="fotos/ed9.png" alt="Edson"></center>
+	    <i><center><a>Fig 9.2 - DWT Edson MSE = 51,653</a></center/></i>
+		<center><img src="fotos/edu9.png" alt="Eduardo"></center>
+	    <i><center><a>Fig 9.3 - DWT Eduardo MSE = 0,081</a></center/></i>
+		<center><img src="fotos/vito9.png" alt="Vitor"></center>
+	    <i><center><a>Fig 9.4 - DWT Vitor MSE = 81,865</a></center/></i>
+		
+		<b>Parte 10 -  </b></h4>
+      <div class="w3-row-padding w3-padding-16"></div>
+	<audio controls>
+          <source src="audios/descricaovideo.mp3" type="audio/mp3">
+		   Your browser does not support the audio element.
+        </audio>
+		 <p> Nesta etapa foi feita a comparação da reconstrução da imagem a partir da DWT, com a ima gem original. 
+		 O erro quedrático médio é calculado do pixel da imagem original em relação ao pixel da imagem reconstruida. </p>
+		 <center><img src="fotos/dan10.png" alt="Daniel"></center>
+	    <i><center><a>Fig 10.1 - DWT Daniel MSE = 81,865</a></center/></i>  
+		<center><img src="fotos/ed10.png" alt="Edson"></center>
+	    <i><center><a>Fig 10.2 - DWT Edson MSE = 51,653</a></center/></i>
+		<center><img src="fotos/edu10.png" alt="Eduardo"></center>
+	    <i><center><a>Fig 10.3 - DWT Eduardo MSE = 0,081</a></center/></i>
+		<center><img src="fotos/vito10.png" alt="Vitor"></center>
+	    <i><center><a>Fig 10.4 - DWT Vitor MSE = 81,865</a></center/></i>
+		
+		<b>Parte 11 -  </b></h4>
+      <div class="w3-row-padding w3-padding-16"></div>
+	<audio controls>
+          <source src="audios/descricaovideo.mp3" type="audio/mp3">
+		   Your browser does not support the audio element.
+        </audio>
+		 <p> Nesta etapa foi feita a comparação da reconstrução da imagem a partir da DWT, com a ima gem original. 
+		 O erro quedrático médio é calculado do pixel da imagem original em relação ao pixel da imagem reconstruida. </p>
+		 <center><img src="fotos/dan11.png" alt="Daniel"></center>
+	    <i><center><a>Fig 11.1 - DWT Daniel MSE = 81,865</a></center/></i>  
+		<center><img src="fotos/ed11.png" alt="Edson"></center>
+	    <i><center><a>Fig 11.2 - DWT Edson MSE = 51,653</a></center/></i>
+		<center><img src="fotos/edu11.png" alt="Eduardo"></center>
+	    <i><center><a>Fig 11.3 - DWT Eduardo MSE = 0,081</a></center/></i>
+		<center><img src="fotos/vito11.png" alt="Vitor"></center>
+	    <i><center><a>Fig 11.4 - DWT Vitor MSE = 81,865</a></center/></i>
+		
+		<b>Parte 12 -  </b></h4>
+      <div class="w3-row-padding w3-padding-16"></div>
+	<audio controls>
+          <source src="audios/descricaovideo.mp3" type="audio/mp3">
+		   Your browser does not support the audio element.
+        </audio>
+		 <p> Nesta etapa foi feita a comparação da reconstrução da imagem a partir da DWT, com a ima gem original. 
+		 O erro quedrático médio é calculado do pixel da imagem original em relação ao pixel da imagem reconstruida. </p>
+		 <center><img src="fotos/dan12.png" alt="Daniel"></center>
+	    <i><center><a>Fig 12.1 - DWT Daniel MSE = 81,865</a></center/></i>  
+		<center><img src="fotos/ed12.png" alt="Edson"></center>
+	    <i><center><a>Fig 12.2 - DWT Edson MSE = 51,653</a></center/></i>
+		<center><img src="fotos/edu12.png" alt="Eduardo"></center>
+	    <i><center><a>Fig 12.3 - DWT Eduardo MSE = 0,081</a></center/></i>
+		<center><img src="fotos/vito12.png" alt="Vitor"></center>
+	    <i><center><a>Fig 12.4 - DWT Vitor MSE = 81,865</a></center/></i>
+		
+		<b>Parte 13 -  </b></h4>
+      <div class="w3-row-padding w3-padding-16"></div>
+	<audio controls>
+          <source src="audios/descricaovideo.mp3" type="audio/mp3">
+		   Your browser does not support the audio element.
+        </audio>
+		 <p> Nesta etapa foi feita a comparação da reconstrução da imagem a partir da DWT, com a ima gem original. 
+		 O erro quedrático médio é calculado do pixel da imagem original em relação ao pixel da imagem reconstruida. </p>
+		 <center><img src="fotos/dan13.png" alt="Daniel"></center>
+	    <i><center><a>Fig 13.1 - DWT Daniel MSE = 81,865</a></center/></i>  
+		<center><img src="fotos/ed13.png" alt="Edson"></center>
+	    <i><center><a>Fig 13.2 - DWT Edson MSE = 51,653</a></center/></i>
+		<center><img src="fotos/edu13.png" alt="Eduardo"></center>
+	    <i><center><a>Fig 13.3 - DWT Eduardo MSE = 0,081</a></center/></i>
+		<center><img src="fotos/vito13.png" alt="Vitor"></center>
+	    <i><center><a>Fig 13.4 - DWT Vitor MSE = 81,865</a></center/></i>
+		
+		<b>Parte 14 -  </b></h4>
+      <div class="w3-row-padding w3-padding-16"></div>
+	<audio controls>
+          <source src="audios/descricaovideo.mp3" type="audio/mp3">
+		   Your browser does not support the audio element.
+        </audio>
+		 <p> Nesta etapa foi feita a comparação da reconstrução da imagem a partir da DWT, com a ima gem original. 
+		 O erro quedrático médio é calculado do pixel da imagem original em relação ao pixel da imagem reconstruida. </p>
+		 <center><img src="fotos/dan14.png" alt="Daniel"></center>
+	    <i><center><a>Fig 14.1 - DWT Daniel MSE = 81,865</a></center/></i>  
+		<center><img src="fotos/ed14.png" alt="Edson"></center>
+	    <i><center><a>Fig 14.2 - DWT Edson MSE = 51,653</a></center/></i>
+		<center><img src="fotos/edu14.png" alt="Eduardo"></center>
+	    <i><center><a>Fig 14.3 - DWT Eduardo MSE = 0,081</a></center/></i>
+		<center><img src="fotos/vito14.png" alt="Vitor"></center>
+	    <i><center><a>Fig 14.4 - DWT Vitor MSE = 81,865</a></center/></i>
+			   
+	   
+     </div> 
+   </div> 
+       
+        
+        
+     <div class="w3-row-padding w3-padding-16">
+      <h4><b>Arquivos .ipynb para download:</b></h4>
+      <div class="w3-row-padding w3-padding-16">
+        
+        <a href="Colab_Lab3_2021/Lab3_grupo_14.ipynb" download="Lab3_grupo_14.ipynb">Código utilizado</a><br/>
+        
+ 
+     </div>      
+    </div>   
+          
+        
+    </div>
+  </div>
+ 
+  <!-- Footer -->
+  <footer class="w3-container w3-padding-32 w3-dark-grey">
+  <div class="w3-row-padding">
+    <div class="w3-third">
+      <h3>RESUMO</h3>
+      <p>Página dedicada à disciplina de Codificação de Sinais Multimidia</p>
+      <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+    </div>
+  
+    <div class="w3-third">
+      <h3>MATÉRIAS RELACIONADAS</h3>
+      <ul class="w3-ul w3-hoverable">
+        <li class="w3-padding-16">
+          <a href="https://www.uol.com.br/tilt/noticias/redacao/2021/09/02/som-e-imagem-juntinhos-saiba-como-funcionam-os-cabos-hdmi.htm">
+          <img src="https://cdn1.iconfinder.com/data/icons/computer-hardware-529/64/Hdmi-electronic-device-multimedia-technology-256.png" class="w3-left w3-margin-right" style="width:30px">
+          <span class="w3-large">Vídeo</span><br>
+          <span>Som e imagem juntinhos: saiba como funcionam os cabos HDMI</span>
+          </a>
+        </li>
+        <li class="w3-padding-16">
+          <a href="https://musicaemercado.org/compreendendo-a-taxa-de-amostragem-e-como-isso-afeta-o-mercado-do-audio/">
+          <img src="https://cdn1.iconfinder.com/data/icons/communication-and-wireless-network-vol-4/520/communication_network_wifi_device_eletronic_wireless_-_4-256.png" class="w3-left w3-margin-right" style="width:30px">
+          <span class="w3-large">Áudio</span><br>
+          <span>Compreendendo a taxa de amostragem e como isso afeta o mercado do áudio</span>
+          </a>  
+        </li> 
+      </ul>
+    </div>
+
+    <div class="w3-third">
+      <h3>TAGS</h3>
+      <p>
+        <span class="w3-tag w3-black w3-margin-bottom">UFABC</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">São Paulo</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">Eng Info</span>
+        <span class="w3-tag w3-grey w3-small w3-margin-bottom">Áudio</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">Vídeo</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">DIY</span>
+        <span class="w3-tag w3-grey w3-small w3-margin-bottom">Inovação</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">Labs</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">Grupo</span>
+        <span class="w3-tag w3-grey w3-small w3-margin-bottom">Santo André</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">Tech</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">Codificação</span>
+        <span class="w3-tag w3-grey w3-small w3-margin-bottom">Voz</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">Games</span>
+      </p>
+    </div>
+
+  </div>
+  </footer>
+  
+  <div class="w3-black w3-center w3-padding-24">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></div>
+
+<!-- End page content -->
+</div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+</script>
+
+</body>
+</html>
+
